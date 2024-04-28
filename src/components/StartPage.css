@@ -1,0 +1,62 @@
+/* Common variables, imports & roots */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+.startpage {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .startpage p {
+    margin: 10px;
+  }
+
+  .keyfeature {
+    font-style: italic;
+  }
+
+  .startpage h1 {
+    margin: 0 10px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .startpage h2 {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .startpage h3 {
+    margin: 0 10px;
+  }
+
+  .howtosection h3 {
+    margin: 40px 10px 10px 10px;
+  }
+  
+  .startpage .keyfeatures {
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .startpage .keyfeatures-title {
+    font-weight: 700;
+  }
+
+  /*
+  h1 {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+  }
+  
+  h2 {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
+  */

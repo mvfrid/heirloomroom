@@ -1,0 +1,81 @@
+
+.menu-section {
+    margin: 10px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    z-index: 100000000;
+    position: relative;
+}
+
+
+.menubutton {
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100000;
+}
+
+.expandedmenu {
+    background-color: var(--palegold);
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Start with the menu hidden */
+    position: absolute; /* Fixed position relative to the viewport */
+    top: 52px;
+    right: 0;
+}
+
+/* If isMenuOpen is true, the expandedmenu will be shown */
+.menu-section .expandedmenu {
+    display: block;
+  }
+
+.expandedmenu p {
+    padding: 0;
+    text-align: end;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.expandedmenu p:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 550px) {
+    /* Styles for tablet view & + */
+    .menubutton {
+        width: 90px;
+    }
+
+    .menu-section {
+        position: absolute;
+        top: 7px;
+        right:7px;
+        margin: 0;
+    }
+
+    .expandedmenu {
+        padding: 12px;
+        min-width: 100px;
+        top: 90px;
+    }
+
+    .expandedmenu p {
+        font-size: 18px;
+    }
+  }
+
+@media (min-width: 1025px) {
+    /* Styles for desktop view */
+  }

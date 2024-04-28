@@ -5,6 +5,7 @@
 
 :root {
   --darkgreen: #082f1e;
+  --mediumgreen: #537063;
   --palebeige: #fff7dd;
   --lighterbeige: #fef9e4;
   --emeraldgreen: #046307;
@@ -12,13 +13,8 @@
   --lightbrown: #c49758;
   --richgold: #D4AF37;
   --palegold: #C5B358;
-}
 
-.vollkorn-lala {
-  font-family: "Vollkorn", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  --maxwidth: 800px;
 }
 
 
@@ -34,7 +30,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--darkgreen);
+  background-color: var(--mediumgreen);
 }
 
 code {
@@ -43,16 +39,25 @@ code {
 }
 
 .app {
-  background-color: #000000;
+  background-color: var(--mediumgreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .header {
   background-color: var(--darkgreen);
+  width: 100%;
+  max-width: var(--maxwidth);
+  /*max-height: 200px;*/
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 100;
 }
 
 .header-title {
@@ -60,63 +65,48 @@ code {
   margin-right: 20px;
 }
 
-h1 {
-  font-family: "Vollkorn", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 44px;
-}
-
-h2 {
-  font-family: "Vollkorn", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-}
-
 .logo {
-  max-width: 300px;
+  max-width: 180px;
+  margin-top: 5px;
 }
 
 .main {
+  max-width: var(--maxwidth);
+  width: 100%;
   background-color: var(--lighterbeige);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
-
 
 .main p {
   font-size: 14px;
   color: black;
 }
 
-.startpage {
-  max-width: 500px;
-  padding: 20px;
+.bureau-img {
+  max-width: 370px;
+  width:100%;
 }
 
-.startpage p {
-  margin: 10px;
-}
-
-.startpage .keyfeatures {
-  padding: 10px 20px 20px 20px;
-}
-
-.startpage .keyfeatures-title {
-  font-weight: 700;
-}
 
 @media (min-width: 550px) {
   /* Styles for tablet view */
   .header {
     flex-direction: row;
   }
+
+  .logo {
+    max-width: 250px;
+    margin: 10px;
+  }
 }
 
 @media (min-width: 1025px) {
   /* Styles for desktop view */
+  .logo {
+    max-width: 250px;
+    margin: 10px;
+  }
 }
