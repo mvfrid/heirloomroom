@@ -34,6 +34,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkgreen);
 }
 
 code {
@@ -49,6 +50,14 @@ code {
   background-color: var(--darkgreen);
   color: white;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  text-align: center;
+  margin-right: 20px;
 }
 
 h1 {
@@ -56,7 +65,15 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 42px;
+  font-size: 44px;
+}
+
+h2 {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .logo {
@@ -64,7 +81,10 @@ h1 {
 }
 
 .main {
-  background-color: #fff;
+  background-color: var(--lighterbeige);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -92,6 +112,9 @@ h1 {
 
 @media (min-width: 550px) {
   /* Styles for tablet view */
+  .header {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1025px) {
