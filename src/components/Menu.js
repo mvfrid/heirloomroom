@@ -19,9 +19,6 @@ export const Menu = () => {
           <p>Profile</p>
           <p>Search</p>
           <p>Log out</p>
-          <p>Log out</p>
-          <p>Log out</p>
-          <p>Log out</p>
         </div>
       )}
       </div>
