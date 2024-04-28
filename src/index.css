@@ -1,5 +1,34 @@
-body {
+/* Common variables, imports & roots */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+:root {
+  --darkgreen: #082f1e;
+  --palebeige: #fff7dd;
+  --lighterbeige: #fef9e4;
+  --emeraldgreen: #046307;
+  --lighterblack: #333333;
+  --lightbrown: #c49758;
+  --richgold: #D4AF37;
+  --palegold: #C5B358;
+}
+
+.vollkorn-lala {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,4 +39,61 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.app {
+  background-color: #000000;
+}
+
+.header {
+  background-color: var(--darkgreen);
+  color: white;
+  display: flex;
+}
+
+h1 {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.main {
+  background-color: #fff;
+}
+
+
+.main p {
+  font-size: 14px;
+  color: black;
+}
+
+.startpage {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.startpage p {
+  margin: 10px;
+}
+
+.startpage .keyfeatures {
+  padding: 10px 20px 20px 20px;
+}
+
+.startpage .keyfeatures-title {
+  font-weight: 700;
+}
+
+@media (min-width: 550px) {
+  /* Styles for tablet view */
+}
+
+@media (min-width: 1025px) {
+  /* Styles for desktop view */
 }
